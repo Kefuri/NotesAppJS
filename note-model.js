@@ -1,7 +1,7 @@
-function Note(desc) {
-  this.description = desc
+function Note(description) {
+  this.text = description;
 };
 
-
-
-console.log("hi")
+Note.prototype.getText = function(){
+  return this.text
+};
